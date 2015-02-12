@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>My First Webpage</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+<div>
+    
+    <!-- HTML Entities = Reserved characters like <, >, or characters with accents
+    are represented by character entities. To put that character on screen 
+    &entity_name or &entity_number -->
+
+    <!-- Entity character for < sign -->
+    <p>&#60a><p>
+
+    <!-- Character with accent -->
+    <p>a&#768</p>
+
+    <!-- <iframe>It's used to "embed" another web document inside the current web document. 
+    It's how youtube videos are embedded inside the website.
+    Attributes:
+    src - Source of the web page to be embedded -->
+
+    <iframe src="hello world.html"> </iframe>
+    
+    <!-- Embedded a youtube video. It will not work because this webpage is not hosted on 
+    http but on localhost current. So, it's unable to verify the protocol. When tried on
+    codeschool.org.uk, it worked. -->
+    
+    <iframe width="560" height="315" src="//www.youtube.com/embed/O1A9pm8WOBg" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+</div>
+</body>
+</html>

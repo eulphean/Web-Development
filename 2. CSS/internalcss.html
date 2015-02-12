@@ -1,0 +1,151 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS - Cascading Style Sheet - Used to style the website
+         HTML - Content of the website 
+     -->
+
+    <!-- Internal CSS
+         Update the properties of one thing, for example "Div,"
+         it will update all the divs in the html page
+    -->
+
+    <!-- p = Styling the paragraph will style all the paragraphs 
+    with the current formatting we set.
+    -->
+
+    <!-- div = Styling the logical divisions, all in the curly bracket
+    blocks. Section of the website. It's a rectangle always. It
+    can also be used to modify the content inside the div. -->
+
+    <!-- CSS Class = 
+        - It's a descriptor for a certain type of content.
+        - Multiple elements in html can be descripted with this class -->
+    <!-- .large = large class, which will applied only on the tags attributed by this class,
+    for example <p> tag in this example. Class name can be chosen by the user. -->
+
+    <!-- CSS IDs =
+        - It's a descriptor for a certain type of content.
+        - ONLY a single element with that ID must be there in HTML. [CAUTION]
+    -->
+
+    <!-- #green = green ID represented by a hash. Only a single html element must 
+    be descripted by the "green" ID -->
+
+    <!-- Class Properties:
+
+        1: Background Color
+        2: Color: Font color
+        3: Font-Weight: Weight of the font
+        4: Height
+        5: Width
+        6: Float: Aligns the element
+        7: Clear: When we float elements, there are unfloated
+        elements that remain between floated elements. Clear property
+        allows to clear the floats and put the text between the floats underneath them. Used with an empty div.
+        "Both" stands for both left and right. 
+    -->
+
+    <style type="text/css">
+       
+       .large {
+        font-size:200%;
+        color:black;
+       }
+
+       p { 
+            color:red;
+       }
+
+       #green {
+        color:green;
+       }
+
+       .underline{
+        text-decoration:underline;
+       }
+
+       .bold {
+        font-weight:bold;
+       }
+
+       .orangebox{
+        background-color:orange;
+        width:200px;
+        height:200px;
+        float:right;
+       }
+
+       .redbox {
+        background-color:red;
+        width:300px;
+        height:400px;
+        float:left;
+       }
+
+       .colorcode {
+        background-color:#FA58D0;
+        color:#E0E70D;
+        float:left;
+       }
+
+       .clear {
+        clear:both;
+       }
+
+
+    </style>  
+      
+</head>
+
+<body>
+     
+    <!-- Used to make logical divisions in our webpage-->
+    <div class="orangebox">
+
+        <p>This is some text.</p>
+
+        <p>This is more text.</p>
+
+    </div>
+
+    <div class="redbox">
+
+        <p class="large">This is the example of a class.</p>
+
+        <p class="large">This is the second example of a class.</p>
+
+    </div>
+    
+    <div class="colorcode">
+        
+        <p>This is the example of color codes.</p>
+
+    </div>
+    
+    <!-- Empty Div with a clear class using clear property to put 
+    the text that is between the floating elements underneath them. -->
+    <div class="clear"></div>
+    
+    <div>
+
+        <p id="green" class="large">This is the example of an ID and class. No other html element must use the same ID = Green.</p>
+
+        <!-- <span> = Tag to apply css on a specific span of text in html -->
+
+        <!-- Multiple classes: class = "class1 class2 class3" - just by seperating them under the space -->
+
+        <!-- Class properties have higher priorities than tag properties in css.-->
+
+        <p>The third <span class="underline large bold">word</span> in this line is underlined.</p>
+
+    </div>
+
+</body>
+</html>

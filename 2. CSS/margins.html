@@ -1,0 +1,79 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <style type="text/css">
+       
+       .large {
+        font-size:200%;
+        color:black;
+       }
+
+       p { 
+            color:black;
+       }
+
+       #green {
+        color:green;
+       }
+
+       .underline{
+        text-decoration:underline;
+       }
+
+       .bold {
+        font-weight:bold;
+       }
+
+       .purplebox{
+        background-color:#8404AE;
+        width:200px;
+        height:200px;
+        z-index:1;
+        /*margin:50px;*/ /*Adds a 50px margin around the entire element. It ensures that moving this element never overlaps with another element. That's why margin property is really good.*/
+        margin:50px 100px 230px 100px; /*Top Right Bottom Left - Clockwise*/
+        /*
+        Individual Margins:
+        margin-left
+        margin-right
+        margin-top
+        margin-bottom; 
+        */
+       }
+
+       .greenbox {
+        background-color:#295715;
+        width:300px;
+        height:500px;
+        z-index:2; 
+       }
+
+    </style>  
+      
+</head>
+
+<body>
+     
+    <!-- Used to make logical divisions in our webpage-->
+    <div class="purplebox">
+
+        <p>This is some text.</p>
+
+    </div>
+
+    <div class="greenbox">
+
+        <p class="large">This is the example of a class.</p>
+
+    </div>
+
+    <p>The third <span class="underline large bold">word</span> in this line is underlined.And bla bla bla bla bla bla</p>
+
+</body>
+</html>

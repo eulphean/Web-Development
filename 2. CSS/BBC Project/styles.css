@@ -1,0 +1,378 @@
+ #topbarback
+    {
+        background-color: rgba(131,0,0,0.84);
+        position:relative;
+        z-index:5;
+        width:100%;
+        height:40px;
+        top:40px;
+    }
+
+    #topbar
+    {
+        width:100%;
+        height:40px;
+        color:white;
+        font-family: Arial, helvetica, sans-serif;
+        font-weight:bold;
+        font-size:0.9em;
+        position:relative;
+        z-index:6;
+    }
+
+    .fixedwidth
+    {
+        width:1050px;
+        /* Centers the div and gets the stretch effect */
+        margin:0 auto;
+
+    }
+
+    body
+    {
+        /* Body comes with a default margin, which made the top bar not bleed 
+           entirely on the page. */
+        margin:0;
+        position:relative;
+        top:-170px;
+    }
+
+
+    #logodiv
+    {
+        padding:7px 7px 2px 0px;
+        /* So, if we add another div, we don't want the new div below this div.
+        We want it to the side of this div */
+        float:left;
+        border-right:1px solid #990000;
+    }
+
+    /* All the img tags inside the logodiv can be addressed using this shorthand */
+    #logodiv img
+    {
+        height:27px;
+    }
+
+    #signindiv
+    {
+        padding:12px 122px 11.2px 10px;
+        border-right:1px solid #990000;
+        float:left;
+    }
+
+    #topmenudiv
+    {
+        float:left;
+    }
+    
+    #topmenudiv li
+    {
+        /* It removes the bullet style formatting */
+        list-style:none; 
+        float:left;
+        padding:12px 12px 11.2px 12px;
+        border-right:1px solid #990000;
+    }
+
+    #topmenudiv ul
+    {
+        padding-left:0px;
+        margin:0px;
+    }
+
+    #searchdiv
+    {
+        float:left;
+        padding:8px 0px 0px 10px;
+        border:none;
+    }
+    
+    #searchdiv input
+    {
+        height:17px;
+        width:133px;
+        font-size:1.1em;
+        padding-left:5px;
+        /* To add the image on the side of the Search bar, we add a background-image to the
+        input-type element. */
+        background-image:url("images/magnify.png");
+        background-repeat:no-repeat;
+        background-position:right center;
+        background-size:13%;
+    }
+
+    #newsbar
+    {
+        background-color:#990000;
+        width:100%;
+        height:90px;
+        color:white;
+        font-family: Arial, helvetica, sans-serif;
+        font-weight:bold;
+        font-size:0.9em;
+    }
+
+    #newsbar p{
+        margin:0px;
+        padding:0px;
+        padding-top:15px;
+        /*We float this so that other elements that are added are in the 
+        same line as this element */
+        float:left;
+        position:relative;
+        z-index:6;
+    }
+    
+    /* Used to break the divs, so the new divs are aligned underneath 
+    the previous divs */
+    .break 
+    {
+        clear:both;
+    }
+
+    #newsheader
+    {
+        font-size:3em;
+    }
+
+    #uk
+    {
+        font-size:0.7em;
+        padding-left:10px;
+    }
+
+    #rss
+    {
+        float:right;
+        margin-top:40px;
+        padding-right:34px;
+        position:relative;
+        z-index:6;
+    }
+
+    #rss img
+    {
+        height:15px;
+        float:right;
+        position:relative;
+        z-index:6;
+    }
+
+    #topicmenudiv
+    {
+        background-color:#3E0C0D;
+        height:25.8px;
+        float:left;
+        width:1015px;
+        position:relative;
+        z-index:6;
+    }
+    
+    #topicmenudiv ul
+    {
+        padding-left:0px;
+        margin:0px;
+        padding:0px;
+    }
+    
+    #topicmenudiv li
+    {
+        /* It removes the bullet style formatting */
+        list-style:none; 
+        float:left;
+        margin-top:5px;
+        padding-right:5px;
+        padding-left:5px;
+        border-right:1px solid #990000;
+        font-size: 0.9em;
+    }
+
+    .selected
+    {
+        background-color:#EDEDED;
+        color:#505050;
+        position:relative;
+        top:-5px;
+        right:1px;
+        height:20.5px;
+        /*!important - css hack to "Overrule" the inherited properties from the previous element */
+        border:none !important;
+        padding-top:5px !important;
+    }
+
+    #backgroundimg
+    {
+        background-image:url("images/bbcbackground.png");
+        height:130px;
+        width:100%;
+        position:relative;
+        top:170px;
+        z-index:1;
+        opacity:2;
+    }
+
+    #content
+    {
+        color:#505050;
+        width:100%;
+        font-family: Arial, Helmet, Freesans, sans-serif;
+        font-size:0.9em;
+        font-weight:normal;
+        float:left;
+    }
+
+    #content h1
+    {
+        color:#1F4F82;
+        font-weight:bold;
+        font-size:2.3em;
+        margin-top:15px;
+        margin-bottom:0px;
+        padding:0px;
+    }
+
+    #content img
+    {
+        padding-top:2px;
+        float:left;
+    }
+
+    .newsitem
+    {
+        position:relative;
+        left:10px;
+        width:350px;
+        font-size:1.1em;
+        float:left;
+        font-family:Arial, Helmet, Freesans, sans-serif;
+        padding:0px;
+        margin:0px;
+    }
+    
+    .newsitem a
+    {
+        color:#1F4F82;
+        text-decoration:none;
+    }
+
+    .newsitem a:hover
+    {
+        text-decoration:underline;
+    }
+
+    .date
+    {
+       font-weight:bold;
+    }
+
+    .video
+    {
+        background-image:url("images/triangle.png");
+        background-repeat:no-repeat;
+        background-position:left center;
+        /* Rather than giving a percentage, give a length/breadth pixel dimension to
+        keep the image uniform with other parameters */
+        background-size:16px 13px;
+        /* Padding is always for the content. Image will not be affected by the padding
+        that is added here. To change the position of the image, the margin property of
+        that link element needs to be changed. */
+        padding-left:23px;
+    }
+
+    .links
+    {
+        line-height:1.6em;
+    }
+
+    #watchlisten
+    {
+        float:right;
+        background-color:#e0e0e0;
+        width:330px;
+        height:225px;
+        margin-right:38px;
+        position:relative;
+        top:-40px;
+    }
+
+    h2
+    {
+        color:#505050;
+        margin:10px 0px 0px 10px;
+        font-weight:bold;
+        font-size:1.9em;
+    }
+
+    .boxes
+    {
+        margin:21px 10px 0 0;
+        float:right;
+    }
+
+    .boxes img
+    {
+        height:10px;
+    }
+
+    .leftarrow
+    {
+        float:left;
+        height:110px;
+        width:25px;
+        border-right:1px solid white;
+    }
+
+    .pic1
+    {
+        float:left;
+        height:110px;
+        width:138.5px;
+        border-right:1px solid white;
+    }
+
+    .rightarrow
+    {
+        float:left;
+        height:110px;
+        width:25px;
+    }
+
+    .today 
+    {
+        margin:6px 0 0 6px;
+        font-weight:bold;
+        color:#1F4F82;
+    }
+
+    #watchlisten ul{
+
+    }
+    #watchlisten li
+    {
+        list-style:none;
+        background-image:url("images/live.png");
+        background-repeat:no-repeat;
+        background-position:left;
+        background-size: 20px 10px;
+        padding:10px 0 10px 30px;
+        margin:0px;
+        position:relative;
+        left:-30px;
+        bottom:15px;
+    }
+
+    #watchlisten a
+    {
+        text-decoration:none;
+        color:#1F4F82;
+    }
+
+    .bb
+    {
+        border-bottom:1px solid #DDDDDD;
+    }
+
+    #watchlisten a:visited
+    {
+        color:#1F4F82;
+    }

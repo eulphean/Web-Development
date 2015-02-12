@@ -1,0 +1,210 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Amay's BBC</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+      
+</head>
+
+<body>
+
+    <!--
+        A good practice is to put all your website content in a container. No other 
+        element may exist with that ID. It represents a unique element. 
+    -->
+    <div id="container">
+        
+        <div id="backgroundimg">
+
+        </div>
+
+        <div id ="topbarback">
+
+        </div>
+        <!-- Since there is only a single Topbar, we have ID -->
+        <div id="topbar">
+            
+            <div class="fixedwidth">
+                
+                <div id="logodiv">
+                   
+                    <img id="logoimg" src="images\bbclogo.png" />
+
+                </div>
+                
+                <div id="signindiv">
+
+                    Sign In
+                    
+                </div>
+
+                <!-- To make News, Sport, Weather, etc, we use unordered list.
+                     It's widely used for making Menus. We change the style of
+                     the list to cater to our needs.  -->
+                <div id="topmenudiv">
+                    
+                    <ul>
+                        
+                        <li>News</li>
+
+                        <li>Sport</li>
+
+                        <li>Weather</li>
+
+                        <li>Earth</li>
+
+                        <li>Future</li>
+
+                        <li>Shop</li>
+
+                        <li>TV</li>
+
+                        <li>Radio</li>
+
+                        <li>More...</li>
+
+                    </ul>
+
+                </div>
+
+                <div id="searchdiv">
+                
+                    <input type="text" placeholder="Search" />
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="break" />
+        <!-- Since there is only a single Topbar, we have ID -->
+        <div id="newsbar">
+            
+            <div class="fixedwidth">
+                
+                <p id="newsheader">NEWS<span id="uk">UK</span></p>
+
+                <div id="rss">
+                    RSS <img src="images\rss.png" />
+                </div>
+                
+                <!-- To break the floats from the previous elements -->
+                <div class="break" />
+
+                <div id="topicmenudiv">
+                     <ul>
+                        
+                        <li>Home</li>
+
+                        <li>World</li>
+
+                        <li class="selected">UK</li>
+
+                        <li>England</li>
+
+                        <li>N. Ireland</li>
+
+                        <li>Scotland</li>
+
+                        <li>Wales</li>
+
+                        <li>Business</li>
+
+                        <li>Politics</li>
+
+                        <li>Health</li>
+
+                        <li>Education</li>
+
+                        <li>Sci/Environment</li>
+
+                        <li>Technology</li>
+
+                        <li style="border-right:none">Entertainment & Arts</li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="break"> </div>
+
+        <div id="content">
+
+            <div class="fixedwidth">
+                
+                <br><span class="date">10 February 2015</span> Last updated at 23:47 ET<br>
+
+                <h1>NHS staff 'afraid to speak out'</h1> 
+
+                <img src="images\headlineimage.jpg" />
+                
+                <div class="newsitem">
+                    
+                    The head of a review into the treatment of whistleblowers in England, Sir Robert Francis QC, tells the BBC he has heard shocking accounts of suffering by staff who raised concerns.</br>
+
+                    <a class="links" href="">What is the Francis effect?</a><br />
+
+                    <a class="links"href="">NHS needs 'citizen whistleblowers'</a><br />
+
+                    <a class="video" href="">Whistleblowing 'problems persist'</a><br /><br />
+
+                </div>
+
+                <div id="watchlisten">
+
+                    <div class="boxes">
+
+                        <img src="images\boxes.png" />
+
+                    </div>
+
+                    <h2>Watch/Listen</h2>
+
+                    <div>
+                        
+                        <img src="images\leftArrow.png" class="leftarrow" />
+
+                        <img src="images\pic1.png" class="pic1" />
+
+                        <img src="images\pic2.png" class="pic1" />
+
+                        <img src="images\rightArrow.png" class="rightarrow" />
+
+                    </div>
+
+                    <div class="break">
+
+                    </div>
+
+                    <div>
+                        
+                        <ul>
+
+                            <li class="today bb"><a href="">Today programme</a></li>
+
+                            <li class="today"><a href="">Radio 5 live</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS - Cascading Style Sheet - Used to style the website
+         HTML - Content of the website 
+     -->
+
+    <!-- Internal CSS
+         Update the properties of one thing, for example "Div,"
+         it will update all the divs in the html page
+    -->
+
+    <!-- p = Styling the paragraph will style all the paragraphs 
+    with the current formatting we set.
+    -->
+
+    <!-- div = Styling the logical divisions, all in the curly bracket
+    blocks. Section of the website. It's a rectangle always. It
+    can also be used to modify the content inside the div. -->
+
+    <!-- CSS Class = 
+        - It's a descriptor for a certain type of content.
+        - Multiple elements in html can be descripted with this class -->
+    <!-- .large = large class, which will applied only on the tags attributed by this class,
+    for example <p> tag in this example. Class name can be chosen by the user. -->
+
+    <!-- CSS IDs =
+        - It's a descriptor for a certain type of content.
+        - ONLY a single element with that ID must be there in HTML. [CAUTION]
+    -->
+
+    <!-- #green = green ID represented by a hash. Only a single html element must 
+    be descripted by the "green" ID -->
+
+    <!-- Class Properties:
+
+        1: Background Color
+        2: Color: Font color
+        3: Font-Weight: Weight of the font
+        4: Height
+        5: Width
+        6: Float: Aligns the element
+
+        7: Clear: When we float elements, there are unfloated
+        elements that remain between floated elements. Clear property
+        allows to clear the floats and put the text between the floats underneath them. Used with an empty div.
+        "Both" stands for both left and right. 
+
+        8: Position:Allows to move the divs or html elements around relative to where they are on the page. 
+
+            1:Left, Top: Positive values move things right (with left), down (with top). Negative values move things left (with -ve left), top (with -ve top).
+
+        We can see it overlapping over other elements once we play around with position property. I
+
+            2: Z-Index: It's a layer property to layer a div over another or any html element over another. The greater the value of the element, that will be at the top. Always needs to have "position" property in the class to be active. 
+    -->
+
+    <style type="text/css">
+       
+       .large {
+        font-size:200%;
+        color:black;
+       }
+
+       p { 
+            color:black;
+       }
+
+       #green {
+        color:green;
+       }
+
+       .underline{
+        text-decoration:underline;
+       }
+
+       .bold {
+        font-weight:bold;
+       }
+
+       .purplebox{
+        background-color:#8404AE;
+        width:200px;
+        height:200px;
+        position:fixed; 
+
+        /*With fixed attribute, the html element is fixed at that position relative to the browser. If you scroll down or up, the element is fixed there. Very common in websites where the menu bar is fixed and users scroll through the entire website. */
+
+        /*position:absolute; With absolute attribute, all the other elements will ignore the div with this class in the layout and overlap with it. A little more complicated.*/
+
+        /*position:relative; /* Relative attribute moves things relative to the current position of the HTML element */
+
+        /*position:static - default position when no position is given for the html element.;
+
+        /*left:100px; /* +ve value to right, -ve value to left */
+        /*top:100px; /* +ve value down, -ve value up */
+        z-index:1; /* Layering property: More the #, it will be on top; */
+        top:100px;
+        left:100px;
+       }
+
+       .greenbox {
+        background-color:#295715;
+        width:300px;
+        height:500px;
+        /*position:relative;*/
+        z-index:2; 
+       }
+
+    </style>  
+      
+</head>
+
+<body>
+     
+    <!-- Used to make logical divisions in our webpage-->
+    <div class="purplebox">
+
+        <p>This is some text.</p>
+
+    </div>
+
+    <div class="greenbox">
+
+        <p class="large">This is the example of a class.</p>
+
+    </div>
+
+    <div class="greenbox">
+
+        <p class="large">This is the example of a class.</p>
+
+    </div>
+
+    <div class="greenbox">
+
+        <p class="large">This is the example of a class.</p>
+
+    </div>
+
+    <div class="greenbox">
+
+        <p class="large">This is the example of a class.</p>
+
+    </div>
+
+    <p>The third <span class="underline large bold">word</span> in this line is underlined.And bla bla bla bla bla bla</p>
+
+</body>
+</html>

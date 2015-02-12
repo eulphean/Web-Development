@@ -1,0 +1,98 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=devicee-width, initial-scale=1"/>
+
+    <style type="text/css">
+
+    p {
+
+      font-family:"Comic Sans MS", cursive, sans-serif; /* font-family: Asssigns a font style to text */
+
+      /*  
+        This is picked from the websafe fonts supported by all the common browsers.
+        There are three fonts listed for font-family, so if the browser doesn't support
+        one of the fonts, it can look for the other ones in the list of supported fonts. 
+      */
+    
+    }
+
+    .Font2 
+    {
+      font-family: Impact, Charcoal, sans-serif;
+    }
+
+    .Font3
+    {
+      font-family: "Lucida Console", Monaco, monospace;
+    }
+
+    .bold
+    {
+      font-weight:bold;
+      color:green;
+      font-size:1.2em; /* Relative font-size of the original size. Absolute font-size is 20px. Default font-size is 16px in web-browsers*/
+      /* 1 em: Standard font size (16px) in most browsers. Very similar to % */
+      /* Relative vs Absolute Font-Size: Relative sizes resizes with the browser resizing */;
+    }
+
+    .italics
+    {
+      font-style:italic;
+    }
+
+    .underline
+    {
+      text-decoration:underline;
+    }
+
+    .greenbox
+    {
+      height:50px;
+      width:300px;
+      background-color:green;
+      text-align:justify;
+    }
+
+    </style>  
+
+</head>
+
+<body>
+     
+  <p> This is some text </p>
+
+  <p class = "Font2"> This more text </p>
+
+  <p class ="Font3"> Indeed, this more and more text </p>
+
+  <p class ="bold"> This is some bold text </p>
+
+  <p class ="italics"> This is italic text </p>  
+
+  <p> This <span class="underline"> Text </span> is underlined </p>  
+
+  <div class="greenbox">
+    
+    <p> Here is my text in the div. Here is my text in the div. Here is my text in the div. Here is my text in the div. Here is my text in the div. Here is my text in the div.Here is my text in the div. Here is my text in the div. Here is my text in the div. Here is my text in the div. Here is my text in the div.</p>
+    
+    <!-- 
+
+    Inheritance: If there is a tag inside another tag, then by default the inner 
+    tag will take the style properties of the parent tag. For example, in the above case,
+    <p> tag takes the style properties of the <div> tag. 
+
+    If align property is added to the <p> tag, then the text still aligns to the right 
+    of the div; however, the <p> text under body, they all align to the right of the body
+
+    -->
+
+  </div>
+
+</body>
+</html>
