@@ -1,0 +1,64 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        
+        #circle
+        {
+            height:100px;
+            width:100px;
+            background-color:red;
+            margin:200px 0px 0px 600px;
+            border-radius:50px;
+        }
+
+    </style>  
+      
+</head>
+
+<body>
+    
+    <div id="circle">
+
+    </div>
+
+    <script type="text/javascript">
+
+        /*  
+            HTML (DOM - Document Object Model) -> Everything is a an object in the heirarchy.
+            Node refers to an object
+
+            In the HTML DOM (Document Object Model), everything is a node:
+
+            The document itself is a document node
+            All HTML elements are element nodes
+            All HTML attributes are attribute nodes
+            Text inside HTML elements are text nodes
+            Comments are comment nodes
+        */
+        document.getElementById("circle").onclick=function()
+        {
+            /*
+                onclick is an HTML DOM (Document Model Object) event, which allows javascript to 
+                register different event handlers on elements in an HTML document. Events are normally 
+                used in combination with functions, and the function will not be executed before the event 
+                occurs (such as when a user clicks a button).
+            */
+
+            // CSS display property = how to display an element on the screen
+            document.getElementById("circle").style.display="none";
+        }
+        
+    </script>
+
+</body>
+
+</html>
+
+<!-- Display a red circle on the screen, which disappears when you click on it -->

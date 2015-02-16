@@ -1,0 +1,35 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        
+    </style>  
+      
+</head>
+
+<body>
+    
+    <button id="myButton">You know you want to click me...</button>
+
+    <script type="text/javascript">
+        
+        /* onclick calls a function. Needs the function () to call a function
+           Cannot do ("myButton").onclck=alert("hi")
+        /* onclick - spelling should be exactly that because that's the property 
+           name. Otherwise, things will not work */
+        document.getElementById("myButton").onclick=function()
+        {
+            alert("Here is an alert generated on button click");
+        };
+
+    </script>
+
+</body>
+
+</html>

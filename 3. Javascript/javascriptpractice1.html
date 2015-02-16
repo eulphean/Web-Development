@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        
+        #square
+        {
+            height:150px;
+            width:250px;
+            background-color:green;
+            color:black;
+            font-size:1.5em;
+            text-align:center;
+            padding-top:100px;
+        }
+
+    </style>  
+      
+</head>
+
+<body>
+
+    <div id="square">
+        Square
+    </div>
+
+    <script type="text/javascript">
+
+        document.getElementById("square").onmouseover=function()
+        {
+            document.getElementById("square").style.opacity=0.5;
+        }
+
+        document.getElementById("square").onmouseleave=function()
+        {
+            document.getElementById("square").style.opacity=1.0;
+        }
+
+        document.getElementById("square").onclick=function()
+        {
+            if (document.getElementById("square").style.borderRadius>"100px")
+            {
+                document.getElementById("square").style.borderRadius="0px";
+                document.getElementById("square").style.backgroundColor="green";
+            }
+            else
+            {
+                /* 
+                    Property name might be the same but it's javascript syntax might be different.
+                    For example: background-color is backgroundColor and border-radius is borderRadius
+                 */
+                document.getElementById("square").style.borderRadius="125px";
+                document.getElementById("square").style.backgroundColor="red";
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

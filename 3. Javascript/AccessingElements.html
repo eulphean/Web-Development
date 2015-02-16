@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        
+    </style>  
+      
+</head>
+
+<body>
+    
+    <!-- We use IDs to access the HTML elements because in Javascript we want to do 
+    something with "A particular" HTML element. IDs denote unique elements on a webpage. No
+    more than one element with an ID. We can use this ID to style it as well. -->
+    <p id="text">Some text</p>
+
+    <script type="text/javascript">
+        
+        /*
+            document: Referes to the entire document
+            . : Call a function on the entire document
+            getElementById("ID") : Javascript function name protocol. 
+            First character is always lowercase and then other characters of the
+            words are upper case
+            innerHTML : HTML part of that element
+        */
+
+        // alert (document.getElementById("text").innerHTML);
+
+        // Set the content of that paragraph 
+
+        document.getElementById("text").innerHTML = "Some more text";
+
+    </script>
+
+</body>
+
+</html>
