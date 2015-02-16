@@ -1,0 +1,75 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        
+
+    </style>  
+      
+</head>
+
+<body>
+
+    <button id="stylechanger">Change the text</button>
+
+    <div id="firstDiv">This is some text</div>
+
+    <script type="text/javascript">
+
+        // creating an Array in javascript
+        var myArray = new Array();
+
+        myArray[0]="pizza";
+        myArray[1]="chocolate";
+
+        /* 
+            to see the content of myArray. Very in debugging.
+            Doesn't display it on the page
+        */
+
+        // First item in the array is 0th item
+        var myOtherArray = ["rain", "sunshine"];
+
+        myOtherArray.push("snow");
+
+        /*
+            To remove the last element in the array
+            myOtherArray.pop();
+        */
+
+        /*
+            Remove element
+            Splice (Item's index, # of items to remove after that index)
+        */
+        myOtherArray.splice(1, 1);
+
+        /*
+            Add element (s) using Javascript using splice command
+            splice(index to add element at, # of items to remove, "element to add")
+        */
+        myOtherArray.splice(1, 0, "hail","clouds");
+
+        /*
+            length propety to see the length of the array
+        */
+        console.log(myOtherArray.length);
+
+        console.log(myOtherArray);
+
+        document.getElementById("stylechanger").onclick=function()
+        {
+            document.getElementById("firstDiv").innerHTML=myArray[1];
+        }
+        
+    </script>
+
+</body>
+
+</html>
+

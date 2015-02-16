@@ -1,0 +1,46 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Javascript game</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        
+
+    </style>  
+      
+</head>
+
+<body>
+
+    <p id="number"></p>
+
+    <script type="text/javascript">
+
+      function alertMe ()
+      {
+        alert ("Hi, I'm a function. How's it going?");
+      }
+
+      // Do not have to give variable types:
+      // Javascript is type independent. 
+      // It expects the use to know what he/she is doing
+      function addNumber (num1, num2)
+      {
+        //alert(num1+num2);
+        return (num1+num2);
+      }
+
+      var sum = addNumber (120,15000000);
+
+      document.getElementById("number").innerHTML=sum;
+
+    </script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        
+
+    </style>  
+      
+</head>
+
+<body>
+
+    <p>What is the weather?</p>
+
+    <input id="weather" type="text" />
+
+    <button id="myButton">Click Me!</button>
+
+    <script type="text/javascript">
+
+        /*
+            var x=2;
+
+            if (x==1)
+            {
+                alert ("X is 1");
+            }
+
+            else
+            {
+                alert ("X is not 1");
+            }
+        */
+
+        document.getElementById("myButton").onclick=function()
+        {
+            var weather=document.getElementById("weather").value;
+            
+            if (weather=="cold")
+            {
+                alert ("It's cold right now.");
+            }
+            else if (weather=="hot")
+            {
+                alert ("It's hot right now.");
+            }
+            else if (weather=="rainy")
+            {
+                alert("It's rainy right now");
+            }
+            else
+            {
+                alert("I don't recognize that kind of weather.");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
+

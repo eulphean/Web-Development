@@ -1,0 +1,50 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Javascript game</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        
+
+    </style>  
+      
+</head>
+
+<body>
+
+    <p>How many fingers are you holding up?</p>
+
+    <input id="input" type="text" />
+
+    <button id="myButton">Check</button>
+
+    <script type="text/javascript">
+
+      document.getElementById("myButton").onclick=function()
+      {
+
+        var myNum=document.getElementById("input").value;
+
+        var newNum=-1;
+
+        while (newNum!=myNum)
+        {
+           var newNum=Math.random()*6;
+           newNum=Math.floor(newNum);
+           console.log(newNum);
+        }
+
+        alert ("Voila. Found it. It's number " + newNum);
+        
+      }
+
+    </script>
+
+</body>
+
+</html>
+

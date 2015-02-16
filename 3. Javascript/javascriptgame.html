@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Javascript game</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        
+
+    </style>  
+      
+</head>
+
+<body>
+
+    <p>How many fingers am I holding up?</p>
+
+    <input id="answer" type="text" />
+
+    <button id="myButton">Check</button>
+
+    <script type="text/javascript">
+
+        /* Math - DOM object to call mathematical functions */
+        var x=Math.random();
+
+        x=x*6;
+
+        x=Math.floor(x);
+
+        document.getElementById("myButton").onclick=function()
+        {
+            var number=document.getElementById("answer").value;
+            
+            if (number==x)
+            {
+                alert ("Awesome, you guessed it right. The fingers are:" + x);
+
+            }
+            else
+            {
+                alert ("Oops, your guess is wrong.");
+            }
+
+            document.getElementById("answer").innerHTML="";
+        }
+
+    </script>
+
+</body>
+
+</html>
+
