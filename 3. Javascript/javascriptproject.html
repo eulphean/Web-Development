@@ -15,6 +15,31 @@
         width:200px;
         background-color:red;
         display:none;
+        position:relative;
+        top:10px;
+        left:200px;
+      }
+
+      #scoreboard
+      {
+        height:170px;
+        width:100%;
+        background-color:lightblue;
+        text-align:center;
+        font-size:1.2em;
+        font-family:Helvetica;
+        font-weight:bold;
+        margin:0px;
+        color:#226293;
+        position:relative;
+        top:-26px;
+        padding-top:2px;
+      }
+
+      body
+      {
+        margin:0;
+        padding:0;
       }
       
     </style>  
@@ -23,54 +48,25 @@
 
 <body>
 
-    <p>Your time: <span id="time"></span> seconds</p>
+    <div id="scoreboard">
+        
+        <h1> Test your reactions </h1>
+
+        <h3> Click on the boxes and circles as quick as you can </h3>
+
+        <div> Reaction Time: <span id="time"></span> </div>
+
+    </div>
 
     <div id="box">
 
     </div>
 
-    <script type="text/javascript">
-
-      var clickedTime; var createdTime; var reactionTime;
-
-      var box = document.getElementById("box");
-      
-      box.onclick=function()
-      {
-          clickedTime = Date.now();
-
-          reactionTime = (clickedTime-createdTime)/1000;
-
-          document.getElementById("time").innerHTML=reactionTime;
-
-          box.style.display="none";
-
-          makeBox (); 
-      }
-
-      function makeBox ()
-      {
-            var timeout = Math.random() * 3000;
-
-            /*
-               Calls the function after a certain timeout
-               setTimeout (functionName, timeout value)
-            */
-            setTimeout (function () {
-
-              //block is the default display style
-              box.style.display="block";
-              createdTime=Date.now();
-        
-            }, timeout);
-      }
-
-      makeBox();
-
-    </script>
+    <script type="text/javascript" src="reactiontester.js"></script>
+    
 
 </body>
 
 </html>
 
-<!-- Randomize 1: Where the box comes on the screen, color of the box, and the shape, which could be a circle -->
+<!-- Randomize 1: Where the box comes on the screen, color of the box (done), and the shape , which could be a circle -->
