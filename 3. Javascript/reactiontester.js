@@ -1,11 +1,3 @@
-var clickedTime; var createdTime; var reactionTime;
-
-var colorArray = ["green", "red", "orange", "yellow", "black", "magenta", "lightblue", "#226293"];
-
-var borderRadius = ["0px", "100px", "50px", "20px", "70px"];
-
-var xyPlane = [["100px", "50px"], ["150px", "200px"], ["25px", "45px"], ["75px", "300px"], ["20px","450px"]];
-
 makeBox();
 
 var box=document.getElementById("box");
@@ -27,23 +19,6 @@ function makeBox ()
 {
       var timeout = Math.random() * 3000;
 
-      /*
-          To randomize the color of the object
-      */
-      var coloridx = Math.random() * (colorArray.length);
-      coloridx = Math.floor(coloridx);
-
-      /*
-          To randomize the shape of the object
-      */
-      var bridx = Math.random() * (borderRadius.length);
-      bridx = Math.floor(bridx);
-
-      /*
-          To randomize the placement of the object
-      */
-      var xyidx = Math.random() * (xyPlane.length);
-      xyidx = Math.floor(xyidx);
 
       /*
          Calls the function after a certain timeout
@@ -53,19 +28,50 @@ function makeBox ()
 
         //block is the default display style
         box.style.display="block";
-        
-        // random shape
-        box.style.borderRadius=borderRadius[bridx];
 
-        // random color
-        box.style.backgroundColor=colorArray[coloridx];
+        randomBR(200);
 
-        // random position
-        var a = xyPlane[xyidx];
-        box.style.top = a[0];
-        box.style.left = a[1];
+        randomColor();
+
+        randomPosition(75,55);
 
         createdTime=Date.now();
   
       }, timeout);
+}
+
+
+function randomColor ()
+{     
+  var r = randomGenerator(255);
+  var g = randomGenerator(255);
+  var b = randomGenerator(255);
+  // random color
+  box.style.backgroundColor="rgb(" + r + "," + g + "," + b +")";
+}
+
+function randomBR (boxWidth)
+{
+    brRandom=randomGenerator(boxWidth);
+
+    // random shape
+    box.style.borderRadius=brRandom+"px";
+}
+
+function randomPosition (left,top)
+{
+    left = randomGenerator(left);
+    
+    top = randomGenerator(top);
+    console.log(top);
+    console.log(left);
+    box.style.top=top+"%";
+    box.style.left=left+"%";
+}
+
+function randomGenerator (i)
+{
+  i=Math.random()*i;
+  i=Math.floor(i);
+  return i;
 }

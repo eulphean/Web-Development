@@ -2,12 +2,24 @@
 <!doctype html>
 <html>
 <head>
-    <title>Reactions tester</title>
+    <title>Reaction tester</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type="text/css">
+      
+      /*
+        For the top, height property % to work, it's always relative to the size of the body.
+        Body position needs to be fixed and height and width must be set for the top property
+        to work. 
+      */
+      body
+      {
+        position:fixed;
+        height:100%;
+        width:100%;
+      }
 
       #box
       {
@@ -16,8 +28,8 @@
         background-color:red;
         display:none;
         position:relative;
-        top:10px;
-        left:200px;
+        top:70%;
+        left:50%;
       }
 
       #scoreboard
@@ -50,7 +62,7 @@
 
     <div id="scoreboard">
         
-        <h1> Test your reactions </h1>
+        <h1> Test your reaction </h1>
 
         <h3> Click on the boxes and circles as quick as you can </h3>
 
