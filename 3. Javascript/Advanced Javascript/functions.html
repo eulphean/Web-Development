@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        
+
+    </style>  
+      
+</head>
+
+<body>
+
+    <button id="stylechanger">Change the text</button>
+
+    <div id="firstDiv">This is some text</div>
+
+    <script type="text/javascript">
+
+        /*
+            Functions are first-class citizens (objects) in javascrip.Meaning, they can be passed as parameters to other functions, assigned to variables, and are objects themselves.
+        */
+
+        function Person()
+        {
+            this.name;
+            this.age;
+            this.gender;
+        }
+
+        var Employee = new Person()
+        {
+            this.employeeNumber;
+        }
+
+        /* Employee.constructor is trying to access Person.property instance. 
+        
+        Employee.constructor equals Employee.__proto___.constructor, which equals function Person ()
+
+        Employee.__proto__ also contains a __proto__ property that points to Object.property instance. The constructor of that property points function Object ()*/
+        console.log(Employee.__proto__);
+
+
+        
+
+    </script>
+
+</body>
+
+</html>
+

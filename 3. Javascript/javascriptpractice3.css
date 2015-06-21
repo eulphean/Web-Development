@@ -1,0 +1,64 @@
+body
+{
+    padding:0 auto;
+    margin:0 auto;
+}
+
+h1
+{
+    margin:0 auto;
+    padding:0 auto;
+}
+
+.title1
+{
+    color:white;
+    background-color:black;
+    text-align:center;
+    border-color:aqua;
+    border-width:1px;
+    border-style: solid;
+}
+
+.title2
+{
+    font-family: Impact, Charcoal, sans-serif;
+    font-weight: 500;
+}
+
+.textblock
+{
+    margin-top:10px;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    font-weight: 500;
+    font-size:1.2em;
+    float:left;
+}
+
+#input
+{
+    margin:11px;
+    float:left;
+}
+
+#click
+{
+    clear:both;
+    float:left;
+    margin-left:34px;
+    position:relative;
+}
+
+.res
+{
+    position:relative;
+    margin-top: 45px;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    font-weight: 500;
+}
+
+#result
+{
+    background-color:black;
+    color:white;
+}

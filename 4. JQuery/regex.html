@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning JQuery</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style type="text/css">
+    
+        body
+        {
+            height:100%;
+            width:100%;
+        }
+    
+        .square
+        {   
+            height:300px;
+            width:300px;
+            background-color:red;
+            float:left;
+            margin-left:10px;
+        }
+
+        #circle
+        {   
+            height:200px;
+            width:200px;
+            border-radius:100px;
+            background-color:green;
+            float:left;
+            margin-left:10px;
+        }
+
+    </style>  
+
+    <script type="text/javascript" src="jquery.min.js">  </script>
+
+    <!-- Or source it to http://code.jquery.com/jquery-1.11.2.min.js
+         This will be faster as jquery website will be faster than mine. -->
+      
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        /* regex is defined between / and / - finds the first instance of the regex in the string
+           /regex/i - case insensitive
+           /regex/g - global to look for all instances of regex in the string
+
+           Regex is useful in validating email addresses, etc in forms
+        */
+        var regex = /great/;
+
+        var string = "Regex is great great";
+
+        // match function to match with a regex
+        var result = string.match(regex);
+
+        alert(result);
+
+    </script>
+
+</body>
+
+</html>
+

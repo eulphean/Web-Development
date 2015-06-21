@@ -1,6 +1,6 @@
 makeBox();
 
-var box=document.getElementById("box");
+var box = document.getElementById("box");
 
 box.onclick=function()
 {

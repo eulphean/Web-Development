@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+    <title>Learning Ajax</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />  
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js">  </script>
+
+    <!-- Or source it to http://code.jquery.com/jquery-1.11.2.min.js
+         This will be faster as jquery website will be faster than mine. -->
+
+
+    <style type="text/css">
+        
+        body
+        {
+            height:100%;
+            width:100%;
+        }
+        h1,h2
+        {
+            text-align:center;
+        }
+
+        #inputs
+        {
+            text-align:center;
+        }
+
+        #num1,#num2
+        {
+            margin:5px;
+        }
+
+        #operations
+        {
+            text-align:center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h1>Calculator (ajax, asp.net)</h1>
+
+        <h2>Enter two numbers</h2>
+
+        <div id="inputs">
+
+            <input placeholder="Number 1" type="text" id="num1">
+
+            <input placeholder="Number 2" type="text" id="num2">
+
+            <br /> <br />
+
+            <input placeholder="Result" type="text" id="result">
+
+        </div>
+
+        <div id="operations">
+
+            <h2>Select an operation</h2>
+            
+            <button type="button" id="add">Add</button>
+
+            <button type="button" id="subtract">Subtract</button>
+
+            <button type="button" id="multiply">Multiply</button>
+
+            <button type="button" id="divide">Divide</button>
+            
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+        $("button").click(function()
+        {
+            var val1 = readValues("num1");
+            var val2 = readValues("num2");
+            
+            var args = "num1="+val1+"&num2="+val2;
+            var ajaxUrl = "http://calculatorwebapp.azurewebsites.net/api/values/"
+;            var id = $(this).attr('id');
+
+            switch (id)
+            {
+                case 'add':
+                    ajaxUrl += "Add?" + args; 
+                    break;
+
+                case 'subtract':
+                    ajaxUrl += "Subtract?" + args; 
+                    break;
+
+                case 'multiply':
+                    ajaxUrl += "Multiply?" + args; 
+                    break;
+
+                case 'divide':
+                    ajaxUrl += "Divide?" + args; 
+                    break;
+
+                default:
+                    break;
+            }
+
+            $.ajax({
+                url:ajaxUrl,
+                type:"GET",
+                dataType:"json",
+                success: function(result){
+                    $("#result").val(result);
+                },
+                error: function(xhr, status, error){
+                    var err = eval ("(" + xhr.responseText + ")");
+                    $("#result").val(error.Message);
+                }
+            });
+        });
+
+        function readValues (element)
+        {
+            return $("#"+element).val();
+        }
+
+    </script>
+
+</body>
+
+</html>

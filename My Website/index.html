@@ -1,0 +1,161 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Amay Kataria</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style type="text/css">
+        
+        #container
+        {
+            height:100%;
+            width:100%;
+            background-image: url("images/cover.png");
+            background-size:100% 100%;
+        }
+
+        body,html
+        {
+            height:100%;
+            width:100%;
+            margin:0px;
+            padding:0px;
+        }
+
+        #navcol
+        {
+            float:left;
+            height:100%;
+            width:70%;
+        }
+
+        #infocol
+        {
+            background-color:#b8dadd;
+            height:100%;
+            width:0%;
+            opacity:0.6;
+            box-shadow: -5px 0px 10px #22586d;
+            position:absolute;
+            margin-left:100%;
+            float:left;
+            padding:0;
+        }
+
+        #subinfo
+        {
+            padding:0;
+            margin:0;
+            margin:2% 0% 0% 6%;
+            position:fixed;
+        }
+
+        #name
+        {            
+            font-family: "tangerine";
+            font-size: 5.3em;
+            font-variant: normal;
+            font-weight:bold;
+            color:#235d72;
+            opacity:1;
+            padding:0;
+        }
+
+        #subname
+        {
+            font-style:italic;
+            color:#2a728c;
+            margin-left:10%;
+            position:;
+        }
+
+        #nav1
+        {
+            margin:4% 0% 0% 5%;
+        }
+
+        #nav2
+        {
+            margin:10% 0% 0% 55%;
+        }
+
+        #nav3
+        {
+            margin:15% 0%  0% 60%;
+        }
+
+        #nav4
+        {
+            margin:20% 0%  0% 35%;
+        }
+
+    </style>  
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js">  </script>
+
+    <link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+      <script type="text/javascript" src="http://code.jquery.com/ui/1.11.3/jquery-ui.min.js">  </script>
+      
+</head>
+
+<body>
+
+    <div id="container">
+
+            <div id="navcol">
+                
+
+            </div>
+
+            <div id="infocol">
+                
+                <div id="subinfo">
+                
+                    <div id="name">
+                        amay kataria
+                    </div>
+
+                    <div id="subname">
+                        creative enthusiast, engineer, seeker
+                    </div>
+
+                </div>
+
+            </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+        $(document).ready(function()
+        {
+            $("#infocol").animate({marginLeft:70+'%', width:30+'%'},{duration:1000});
+        })
+
+
+        $("#infocol").click(function()
+        {
+            if ($(this).hasClass("isExpanded"))
+            {
+                $(this).animate({marginLeft:70+'%', width:30+'%'},{duration:500});
+                $(this).removeClass("isExpanded");
+            }
+            else
+            {
+                $(this).animate({marginLeft:0, width:100+'%'},{duration:500});
+                $(this).addClass("isExpanded");         
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

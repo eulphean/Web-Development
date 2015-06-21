@@ -1,0 +1,90 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning JQuery</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style type="text/css">
+    
+        body
+        {
+            height:100%;
+            width:100%;
+        }
+    
+        .square
+        {   
+            height:200px;
+            width:200px;
+            background-color:red;
+            float:left;
+            margin-left:10px;
+        }
+
+        #circle
+        {   
+            height:200px;
+            width:200px;
+            border-radius:100px;
+            background-color:green;
+            float:left;
+            margin-left:10px;
+        }
+
+    </style>  
+
+    <script type="text/javascript" src="jquery.min.js">  </script>
+
+    <!-- Or source it to http://code.jquery.com/jquery-1.11.2.min.js
+         This will be faster as jquery website will be faster than mine. -->
+      
+</head>
+
+<body>
+
+    <div id="circle">
+
+    </div>
+
+    <p>This is some text</p>
+
+    <iframe src ="http://www.cnn.com"></iframe>
+    
+    <script type="text/javascript">
+
+        $("#circle").click(function()
+        {
+            $("p").text("Hello, I just clicked on the circle");
+
+            /*
+                jQuery API principle - If there is content in the bracket for a function, 
+                it will update an attribute of the HTML element. Else, it will return the
+                content of that attribute.
+
+                We can use one function in two different ways
+            */
+        })   
+
+        /*$("#circle").hover(function()
+        {
+            $("p").text("Hello, I just hovered over this");
+        })*/
+
+        $("#circle").hover(function()
+        {
+            // Changing the source of the iframe
+            $("iframe").attr("src", "http://www.udemy.com");
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>
+

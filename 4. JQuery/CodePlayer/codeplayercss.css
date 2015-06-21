@@ -1,0 +1,138 @@
+
+ html {overflow-y: scroll;}
+
+        body
+        {
+            margin:0;
+            padding:0;
+            height:100%;
+            width:100%;
+            min-width:600px;
+
+        }
+
+        #wrapper
+        {
+            margin-left:auto;
+            margin-right:auto;
+            width:100%;
+        }
+
+        #menubar
+        {
+            margin:0 auto;
+            padding:0;
+            height:55px;
+            background-color:#e5f6ff;
+            font-family:Tahoma, Geneva, sans-serif;
+            min-width:600px;
+            border-bottom:2px solid #104c6b;
+        }
+
+        #title
+        {
+            color:#104c6b;
+            font-weight: 600;
+            font-size:1.5em;
+            float:left;        
+            margin-left:15px;
+            margin-top:12px;
+            margin-right:22px;
+        }
+
+        #toggles
+        {
+            list-style:none;
+            margin:auto;
+            /*border:2px solid #104c6b;*/
+            height:27px;
+            width:250px;
+            padding:0px;
+            position:relative;
+            top:15px;
+            border-radius:5px;
+        }
+
+        #toggles li
+        {
+            float:left;
+            font-size: 1.2em;
+            font-weight:500;
+            /*border-right:1px solid grey;*/
+            padding:5px 6px 4px 6px;
+            color:#104c6b;
+        }
+
+        .selected
+        {
+            background-color:#a0dfff;
+            border-radius:5px
+        }
+
+
+        #run
+        {
+            padding:0;
+            color:#104c6b;
+            float:right;
+            border:2px solid #6da3bf;
+            margin-right:35px;
+            margin-top: 10px;
+            height:36px;
+            width:60px;
+            border-radius:7px;
+            text-align:center;
+            font-size:1.5em;
+            background-color:#bfe1f2;
+            box-shadow:2px 2px 1px 1px #48697a;
+        }
+
+        .clear
+        {
+            clear:both;
+        }
+
+        .codeContainer
+        {
+            height:100%;
+            width:50%;
+            float:left;
+            position:relative;
+        }
+
+        .codeContainer textarea 
+        {
+            width:100%;
+            height:100%;
+            border:none;
+            border-right:3px solid #104c6b;
+            font-family:monotype;
+            font-size:1.1em;
+            padding:5px;
+            /* If you can't see the borders, use this property to create borders */
+            box-sizing:border-box;
+        }
+            
+        .codeLabel
+        {
+            /* When position is absolutely, the properties act relative to the first ancestor this class appears in. 
+               If .codeContainer class's position wasn't relative, it would have set these properties relative to 
+               the body */
+            position:absolute;
+            top:7px;
+            right:10px;
+        }
+
+        #CSSContainer, #JSContainer
+        {
+            display:none;
+        }
+
+        iframe
+        {
+            height:100%;
+            position:relative;
+            left:0px;
+            width:100%;
+            border:none;
+        }

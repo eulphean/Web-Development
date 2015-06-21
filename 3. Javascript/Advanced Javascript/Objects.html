@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+        
+
+    </style>  
+      
+</head>
+
+<body>
+
+    <button id="stylechanger">Change the text</button>
+
+    <div id="firstDiv">This is some text</div>
+
+    <script type="text/javascript">
+
+        // Arrays are also a type of Object
+        var myArray1 = new Array();
+
+        myArray1[0]="Amay";
+        myArray1[1]="Ajat";
+
+        console.log(myArray1[1]);
+
+        var myArray2 = ["1", "2"];
+
+        console.log(myArray2[0]);
+
+
+        // Objects in Javascript are like [Key, Value] pairs
+        // Values can be any type as well as objects.
+        // Javascript functions are also a special type of objects.
+        var myObject1 = {
+            key1: "Amay",
+            key2: 2,
+            key3: ["1", "2"],
+            key4: function(name) // here function() is an anonymous method, which doesn't need to be declared 
+            {
+                alert(name);
+            }
+        };
+
+        console.log(myObject1.key1 + " " + myObject1.key2);
+
+        // The key can also be a function because function is 
+        // a valid object in javascript. 
+        myObject1.key4("Hey, this is the name. Alert this");
+
+
+        /*
+            Summary: myObject2 is an "object" - which is dynamic. that means it's memory will be allocated during runtime. 
+            (however, it's static in this example) 
+        */
+        var myObject2 = {
+            name:"Amay",
+            salary:"$40000",
+            age:25
+        };
+
+        console.log(myObject2);
+
+        /* 
+            Object literal is very helpful to create a Utility library. This is an example similar to a class MyUtility that has a bunch of static functions.
+        */
+
+        var MyUtility = {
+
+            function1:function(){
+                alert("Function1");
+                return;
+            },
+
+            function2:function(){
+                alert("Function2");
+                return;
+            },
+
+            function3:function(){
+                alert("Function3");
+                return;
+            },
+
+            function4:function()
+            {
+                alert("Function4");
+                return;
+            }
+
+        }
+
+        MyUtility.function1();
+
+    </script>
+
+</body>
+
+</html>
+

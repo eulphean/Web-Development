@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+<head>
+    <title>PartyMyFriend</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+      
+      /*
+        For the top, height property % to work, it's always relative to the size of the body.
+        Body position needs to be fixed and height and width must be set for the top property
+        to work. 
+      */
+      body
+      {
+        position:fixed;
+        height:100%;
+        width:100%;
+        padding:0;
+        margin:0;
+      }
+
+      div
+      {
+        margin:0;
+        padding:0;
+      }
+
+      /*
+        Vertical color bars: d1 - d4
+      */
+      #d1
+      {
+        height:100%;
+        width:25%;
+        background-color:red;
+        float:left;
+        position:relative;
+      }
+
+       #d2
+      {
+        height:100%;
+        width:25%;
+        background-color:green;
+        float:left;
+        
+      }
+
+       #d3
+      {
+        height:100%;
+        width:25%;
+        background-color:blue;
+        float:left;
+        
+      }
+
+       #d4
+      {
+        height:100%;
+        width:25%;
+        background-color:orange;
+        float:left;
+      }
+
+      #d5
+      {
+        width:100%;
+        height:8.3%;
+        background-color:rgb(25, 99, 13);
+        opacity:0.5;
+        float:top;
+        position:relative;
+        z-index:2;
+      }
+
+      #d6
+      {
+        width:100%;
+        height:8.3%;
+        background-color:rgb(38, 140, 21);
+        opacity:0.5;
+        float:top;
+        position:relative;
+        z-index:2;
+      }
+
+      #d7
+      {
+        width:100%;
+        height:8.3%;
+        background-color:rgb(54, 196, 29);
+        opacity:0.5;
+        position:relative;
+        float:top;
+        z-index:2;
+      }
+
+      #d8
+      {
+        width:100%;
+        height:8.3%;
+        background-color:rgb(75, 255, 43);
+        opacity:0.5;
+        position:relative;
+        float:top;
+        z-index:2;
+      }
+
+      #d9
+      {
+        width:100%;
+        height:8.3%;
+        background-color:rgb(124, 26, 80);
+        opacity:0.5;
+        position:relative;
+        float:top;
+        z-index:2;
+      }
+
+       #d10
+      {
+        width:100%;
+        height:8.3%;
+        background-color:rrgb(178, 39, 115);
+        opacity:0.5;
+        position:relative;
+        float:top;
+        z-index:2;
+      }
+
+      #d11
+      {
+        width:100%;
+        height:8.3%;
+        background-color:rgb(211, 50, 139);
+        opacity:0.5;
+        position:relative;
+        float:top;
+        z-index:2;
+      }
+
+      #d12
+      {
+        width:100%;
+        height:8.3%;
+        background-color:rgb(255, 63, 168);
+        opacity:0.5;
+        position:relative;
+        z-index:2;
+      }
+
+      #d13
+      {
+        width:100%;
+        height:8.3%;
+        background-color:rgb(83, 70, 119);
+        opacity:0.5;
+        position:relative;
+        float:top;
+        z-index:2;
+      }
+
+      #d14
+      {
+        width:100%;
+        height:8.3%;
+        background-color:rgb(111, 96, 158);
+        opacity:0.5;
+        position:relative;
+        float:top;
+        z-index:2;
+      }
+
+
+      #d15
+      {
+        width:100%;
+        height:8.3%;
+        background-color:rgb(146, 128, 204);
+        opacity:0.5;
+        position:relative;
+        float:top;
+        z-index:2;
+      }
+
+      #d16
+      {
+        width:100%;
+        height:8.3%;
+        background-color:rgb(182, 160, 255);
+        opacity:0.5;
+        position:relative;
+        float:top;
+        z-index:2;
+      }
+
+      #d1-1
+      {
+        height:90%;
+        width:25%;
+        border:5px solid #ffd800;
+        position:relative;
+        left:35%;
+        top:4%;
+      }
+
+      
+    </style>  
+      
+</head>
+
+<body>
+
+
+    <!-- Horizontal -->
+    <div id="d1">
+
+      <div id="d1-1">
+
+      </div>
+
+    </div>
+
+    <div id="d2">
+
+    </div>
+
+    <div id="d3">
+
+    </div>
+
+    <div id="d4">
+
+    </div>
+
+    <!-- Vertical -->
+
+    <!-- Green -->
+
+    <div id="d5">
+
+    </div>
+
+    <div id="d6">
+
+    </div>
+
+    <div id="d7">
+
+    </div>
+
+    <div id="d8">
+
+    </div>
+
+    <!-- Red -->
+
+    <div id="d9">
+
+    </div>
+
+    <div id="d10">
+
+    </div>
+
+    <div id="d11">
+
+    </div>
+
+    <div id="d12">
+
+    </div>
+
+    <!-- Blue -->
+
+    <div id="d13">
+
+    </div>
+
+    <div id="d14">
+
+    </div>
+
+    <div id="d15">
+
+    </div>
+
+    <div id="d16">
+
+    </div>
+
+    <script type="text/javascript">
+
+     /* PartyMyFriend();
+
+      var d1 = document.getElementById("d1");
+      var d2 = document.getElementById("d2");
+      var d3 = document.getElementById("d3");
+      var d4 = document.getElementById("d4");
+
+      function randomGenerator (i)
+      {
+        i=Math.random()*i;
+        i=Math.floor(i);
+        return i;
+      }
+
+      function PartyMyFriend ()
+      {
+        var x=1;
+        while (x==1)
+        {
+          setTimeout(function ()
+          {
+              randomColor(d1);
+              randomColor(d1);
+              randomColor(d3);
+              randomColor(d4);
+
+          }, );
+        }
+      }
+
+      function randomColor (box)
+      {     
+        console.log("thisisbox"+box);
+        var r = randomGenerator(255);
+        var g = randomGenerator(255);
+        var b = randomGenerator(255);
+        // random color
+        box.style.backgroundColor="rgb(" + r + "," + g + "," + b +")";
+      }
+
+      */
+      
+    </script>
+
+</body>
+
+</html>
+
+<!-- Randomize 1: Where the box comes on the screen, color of the box (done), and the shape , which could be a circle -->

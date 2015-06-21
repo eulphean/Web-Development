@@ -1,0 +1,62 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Jquery Practice</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style type="text/css">
+
+        #square
+        {
+            height:100px;
+            width:100px;
+            background-color:aquamarine;
+            float:left;
+            margin:20px;
+        }
+
+        .circle
+        {
+            height:100px;
+            width:100px;
+            border-radius:50px;
+            background-color:black !important;
+        }
+    
+    </style>  
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js">  </script>
+
+    <!-- I'm including the jQuery library this way -->
+      
+</head>
+
+<body>
+    
+    <div id="square"></div>
+
+    <script type="text/javascript">
+
+        $("#square").click(function(){
+
+            console.log($(this).height());
+
+            if ($(this).hasClass("circle"))
+            {
+                $(this).attr("class", "square");
+            }
+            else
+            {
+                $(this).addClass("circle");
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

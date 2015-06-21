@@ -1,0 +1,91 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>CodePlayer</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" type="text/css" href="codeplayercss.css">
+
+    <script type="text/javascript" src="jquery.min.js">  </script>
+
+
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+
+
+    <!-- Web version of jquery ui.
+         This allows to create beautiful looking UI elements and enables effects
+         on them that wouldn't be possible generally. -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"> </script>
+ 
+    <!-- Or source it to http://code.jquery.com/jquery-1.11.2.min.js
+         This will be faster as jquery website will be faster than mine. -->
+
+      
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div id="menubar"> 
+
+            <div id="title">
+                
+                CodePlayer
+
+            </div>
+
+            <button id="run">
+                
+                Run
+
+            </button>
+
+            <ul id="toggles">
+
+                <li class="toggle selected">HTML</li>
+                <li class="toggle">CSS</li>
+                <li class="toggle">JS</li>
+                <li class="toggle selected" style="border:none">Result</li>
+
+            </ul>
+        
+        </div>
+
+        <div class="clear" />
+
+        <div class="codeContainer" id="HTMLContainer">
+              
+            <textarea placeholder="Write your HTML" id="htmlCode" onfocus="setbg('#e5fff3', 'htmlCode');" onblur="setbg('white', 'htmlCode');"></textarea>
+
+        </div>
+
+        <div class="codeContainer" id="CSSContainer">
+              
+            <textarea placeholder="Write your CSS" id="cssCode" onfocus="setbg('#e5fff3', 'cssCode');" onblur="setbg('white', 'cssCode');"></textarea>
+
+        </div>
+
+        <div class="codeContainer" id="JSContainer">
+              
+            <textarea placeholder="Write your JS" id="jsCode" onfocus="setbg('#e5fff3', 'jsCode');" onblur="setbg('white', 'jsCode');"></textarea>
+
+        </div>
+
+        <div class="codeContainer" id="ResultContainer">
+              
+            <iframe placeholder="View your Result" id="resultFrame"></iframe>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="codeplayerjs.js" ></script>
+
+</body>
+
+</html>

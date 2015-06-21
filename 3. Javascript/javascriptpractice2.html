@@ -1,0 +1,65 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />s
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    
+    #text
+    {
+        background-color:blue;
+        position:relative;
+        height:2em;
+        width:10em;
+        float:left;
+        padding:0px;
+    }
+    #changetext
+    {
+        height:2em;
+        width:10em;
+        position:relative;
+        float:left;
+        left:5%;
+    }
+
+    </style>  
+      
+</head>
+
+<body>
+    
+    <div id="text">
+
+    </div>
+
+    <button id="changetext">Click Me!!</button>
+
+    
+    <script type="text/javascript">
+
+
+        /*
+            Javascript skills that I have:
+            - if statements
+            - for loops
+            - while loops
+            - accessing DOM elements
+            - manipulating DOM elements
+        */
+        var but = document.getElementById("changetext");
+        but.onclick=function()
+        {
+            document.getElementById("text").innerHTML ="Hello";
+        }
+
+    </script>
+
+</body>
+
+</html>
+
